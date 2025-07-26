@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChefMate官网</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+        }
+
+        .header {
+            background-color: #ff6600;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        .logo {
+            height: 60px;
+            width: auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2,
+        h3,
+        h4 {
+            color: #ff6600;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #ff6600;
+            padding-bottom: 0.3em;
+            margin-top: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-top: 1.2em;
+        }
+
+        h4 {
+            font-size: 1.2em;
+            margin-top: 1em;
+            color: #ff6600;
+        }
+
+        .contributors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5em;
+            justify-content: center;
+            margin-top: 2em;
+        }
+
+        .contributor {
+            text-align: center;
+            flex: 1 1 150px;
+            max-width: 150px;
+        }
+
+        .contributor img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ff6600;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cloudstudio-link {
+            display: block;
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        .project-description {
+            line-height: 1.6;
+        }
+
+        .features,
+        .tech-implementation,
+        .development-info {
+            margin-top: 1.5em;
+        }
+
+        .feature-section {
+            margin-bottom: 1.5em;
+            padding: 1em;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        ul,
+        ol {
+            padding-left: 1.5em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        code {
+            background-color: #f1f1f1;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="logo.png" alt="ChefMate Logo" class="logo">
+        <h1>ChefMate————手残党的福音</h1>
+    </div>
+    <div class="container">
+        <a href="https://cloudstudio.net/a/28673286531473408?channel=share&sharetype=URL" class="cloudstudio-link">
+            <img src="https://cs-res.codehub.cn/common/assets/icon-badge.svg" alt="CloudStudio">
+        </a>
+        <h2>项目介绍</h2>
+        <div class="project-description">
+            <h2>ChefMate - 智能菜谱助手</h2>
+            <p>ChefMate是一款智能菜谱助手应用，帮助用户发现、收藏和购买食材制作美食。</p>
+
+            <h3>功能特点</h3>
+            <div class="features">
+                <div class="feature-section">
+                    <h4>1. 首页 (home.html)</h4>
+                    <ul>
+                        <li>浏览推荐菜谱</li>
+                        <li>按分类筛选菜谱（鲁菜、川菜、粤菜等）</li>
+                        <li>搜索菜谱功能</li>
+                        <li>收藏喜欢的菜谱</li>
+                        <li>语音输入搜索菜谱</li>
+                        <li>日期选择功能</li>
+                    </ul>
+                </div>
+
+                <div class="feature-section">
+                    <h4>2. 菜谱详情 (recipe-detail.html)</h4>
+                    <ul>
+                        <li>查看菜谱详细信息（食材、步骤等）</li>
+                        <li>收藏菜谱功能</li>
+                        <li>添加食材到购物篮</li>
+                        <li>分享菜谱</li>
+                        <li>调整食材分量</li>
+                        <li>进入烹饪模式</li>
+                    </ul>
+                </div>
+
+                <div class="feature-section">
+                    <h4>3. 收藏夹 (favorites.html)</h4>
+                    <ul>
+                        <li>查看收藏的菜谱</li>
+                        <li>查看收藏的食材</li>
+                        <li>分类筛选（全部、菜谱、食材）</li>
+                        <li>删除收藏项</li>
+                        <li>分享功能</li>
+                    </ul>
+                </div>
+
+                <div class="feature-section">
+                    <h4>4. 购物篮 (shopping-basket.html)</h4>
+                    <ul>
+                        <li>管理购物清单</li>
+                        <li>按分类查看食材（蔬菜、水果、肉类等）</li>
+                        <li>添加新食材</li>
+                        <li>添加新分类</li>
+                        <li>标记已购买食材</li>
+                        <li>调整食材数量</li>
+                        <li>收藏常用食材</li>
+                        <li>分享购物清单</li>
+                    </ul>
+                </div>
+
+                <div class="feature-section">
+                    <h4>5. 个人中心 (profile.html)</h4>
+                    <ul>
+                        <li>查看个人资料</li>
+                        <li>编辑个人资料</li>
+                        <li>查看成就徽章</li>
+                        <li>设置功能</li>
+                    </ul>
+                </div>
+
+                <div class="feature-section">
+                    <h4>6. 搜索功能 (search.html)</h4>
+                    <ul>
+                        <li>搜索菜谱</li>
+                        <li>按分类筛选</li>
+                        <li>语音搜索</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>技术实现</h3>
+            <div class="tech-implementation">
+                <h4>前端</h4>
+                <ul>
+                    <li>HTML5 + CSS3 + JavaScript</li>
+                    <li>响应式设计，适配移动端</li>
+                    <li>本地存储 (localStorage)</li>
+                </ul>
+
+                <h4>后端</h4>
+                <ul>
+                    <li>Python Flask API</li>
+                    <li>语音识别功能</li>
+                    <li>菜谱数据管理</li>
+                </ul>
+            </div>
+
+            <h3>使用说明</h3>
+            <ol>
+                <li>打开 <code>index.html</code> 进入应用</li>
+                <li>在首页浏览推荐菜谱或使用搜索功能查找菜谱</li>
+                <li>点击菜谱卡片查看详细信息</li>
+                <li>在菜谱详情页可以：
+                    <ul>
+                        <li>收藏菜谱</li>
+                        <li>添加所需食材到购物篮</li>
+                        <li>调整食材分量</li>
+                        <li>分享菜谱</li>
+                    </ul>
+                </li>
+                <li>在购物篮页面可以：
+                    <ul>
+                        <li>管理购物清单</li>
+                        <li>按分类查看食材</li>
+                        <li>添加新食材</li>
+                        <li>标记已购买食材</li>
+                    </ul>
+                </li>
+                <li>在收藏夹页面可以：
+                    <ul>
+                        <li>查看收藏的菜谱和食材</li>
+                        <li>删除不需要的收藏项</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>开发说明</h3>
+            <div class="development-info">
+                <h4>项目结构</h4>
+                <pre><code>chefmateweb/
+├── index.html          # 应用入口
+├── home.html           # 首页
+├── recipe-detail.html  # 菜谱详情页
+├── favorites.html      # 收藏夹页
+├── shopping-basket.html# 购物篮页
+├── profile.html        # 个人中心页
+├── search.html         # 搜索页
+├── css/                # 样式文件
+├── js/                 # JavaScript文件
+├── images/             # 图片资源
+├── recipes/            # 菜谱数据文件
+└── backend/            # 后端API</code></pre>
+
+                <h4>主要JavaScript文件</h4>
+                <ul>
+                    <li><code>script.js</code>: 首页功能实现</li>
+                    <li><code>recipe-detail.js</code>: 菜谱详情页功能实现</li>
+                    <li><code>favorites.js</code>: 收藏夹功能实现</li>
+                    <li><code>shopping-basket.js</code>: 购物篮功能实现</li>
+                    <li><code>profile.js</code>: 个人中心功能实现</li>
+                    <li><code>search.js</code>: 搜索功能实现</li>
+                </ul>
+
+                <h4>本地存储键名</h4>
+                <ul>
+                    <li><code>chefmate_favorites</code>: 收藏数据</li>
+                    <li><code>chefmate_market_data</code>: 购物篮数据</li>
+                    <li><code>chefmate_categories</code>: 自定义分类数据</li>
+                    <li><code>chefmate_user_info</code>: 用户信息</li>
+                </ul>
+            </div>
+
+            <h3>后端API</h3>
+            <p>后端使用Python Flask实现，提供以下功能：</p>
+            <ul>
+                <li>语音识别转文字</li>
+                <li>菜谱数据管理</li>
+                <li>用户数据管理</li>
+            </ul>
+            <p>运行后端服务：</p>
+            <pre><code>python backend/api.py</code></pre>
+
+            <h3>注意事项</h3>
+            <ul>
+                <li>应用使用localStorage存储数据，请勿清除浏览器数据</li>
+                <li>部分功能需要网络连接（如语音识别）</li>
+                <li>应用适配移动端，建议在手机上使用获得最佳体验</li>
+            </ul>
+        </div>
+        <h3>Contributors:</h3>
+        <div class="contributors">
+            <div class="contributor">
+                <img src="1.jpg" alt="依霏雪">
+                <p>依霏雪</p>
+            </div>
+            <div class="contributor">
+                <img src="2.jpg" alt="Cola Pig">
+                <p>Cola Pig</p>
+            </div>
+            <div class="contributor">
+                <img src="3.jpg" alt="核蛋拌面">
+                <p>核蛋拌面</p>
+            </div>
+            <div class="contributor">
+                <img src="4.jpg" alt="瘦子阿尔法">
+                <p>瘦子阿尔法</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
